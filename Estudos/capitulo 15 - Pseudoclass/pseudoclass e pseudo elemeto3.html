@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses e pseudo elementos</title>
+    <style>
+        /*
+        ___________________________________
+        - seletores personalizados -
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+        ___________________________________
+        */
+
+       body{
+           font-family: sans-serif;
+       }
+
+       a{
+           color:red
+       }
+       a:visited{
+           color:chartreuse
+       }
+
+    /*deixa o testo com cor diferente quano passa o mouse*/
+
+       a:hover{
+           color:red;
+           text-decoration: underline;       }
+a:after{
+    content: '[link]';
+    text-decoration: none;
+    font-weight: normal;
+    color: darkgrey;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li> <a href="https://github.com.br">Repositorio git hub</li> </a>
+        <li> <a href="https://www.youtube.com/watch?v=8IcKBnfOB7M">Canal Youtube</li> </a>
+        <li><a href="https://github.com.br">site curso em vid</li></a>
+    </ul>
+</body>
+</html>
